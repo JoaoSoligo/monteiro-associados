@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Monteiro & Associados - Advocacia e Consultoria Jurídica de Excelência. Atuação ética, transparente e personalizada em diversas áreas do direito.">
+  <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+  <title>Monteiro & Associados | Advocacia e Consultoria Jurídica</title>
+  
+  <!-- Tipografia Google Fonts: Playfair Display & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Barra de Progresso de Leitura -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- 1. HEADER INSTITUCIONAL -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#inicio" class="logo" aria-label="Monteiro & Associados Início">
+        <div class="logo-mark">M&A</div>
+        <div class="logo-text">
+          <span class="logo-title">MONTEIRO & ASSOCIADOS</span>
+          <span class="logo-subtitle">SOCIEDADE DE ADVOGADOS</span>
+        </div>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Navegação Principal">
+        <a href="#inicio" class="nav-link active">Início</a>
+        <a href="#escritorio" class="nav-link">Escritório</a>
+        <a href="#atuacao" class="nav-link">Áreas de Atuação</a>
+        <a href="#equipe" class="nav-link">Equipe</a>
+        <a href="#conteudos" class="nav-link">Artigos</a>
+        <a href="#contato" class="nav-link">Contato</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#contato" class="btn btn-gold">
+          <span>Fale com um advogado</span>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir Menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menu Mobile -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <nav class="mobile-nav">
+      <a href="#inicio" class="mobile-link">Início</a>
+      <a href="#escritorio" class="mobile-link">Escritório</a>
+      <a href="#atuacao" class="mobile-link">Áreas de Atuação</a>
+      <a href="#equipe" class="mobile-link">Equipe</a>
+      <a href="#conteudos" class="mobile-link">Artigos</a>
+      <a href="#contato" class="mobile-link">Contato</a>
+      <a href="#contato" class="btn btn-gold mobile-cta">Fale com um advogado</a>
+    </nav>
+  </div>
+
+  <main>
+    <!-- 2. HERO SECTION -->
+    <section class="hero" id="inicio">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content-wrapper">
+        <div class="hero-text reveal-up">
+          <span class="eyebrow">EXCELÊNCIA NA ADVOCACIA</span>
+          <h1 class="hero-title">Compromisso, ética e excelência na defesa dos seus direitos.</h1>
+          <p class="hero-subtitle">
+            Atuação jurídica consultiva e contenciosa pautada na solidez técnica, no rigor ético e na proteção integral dos interesses de nossos clientes corporativos e individuais.
+          </p>
+          <div class="hero-actions">
+            <a href="#escritorio" class="btn btn-gold">Conheça nosso escritório</a>
+            <a href="#atuacao" class="btn btn-outline-white">Áreas de atuação</a>
+          </div>
+        </div>
+
+        <div class="hero-badge-box reveal-scale">
+          <div class="badge-card">
+            <span class="badge-number">25+</span>
+            <span class="badge-label">Anos de Tradição e Credibilidade</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAIXA DE DIFERENCIAIS INSTITUCIONAIS -->
+    <section class="institucional-bar">
+      <div class="container ib-grid">
+        <div class="ib-item reveal-up">
+          <div class="ib-icon">⚖️</div>
+          <div>
+            <h3>Rigor Técnico</h3>
+            <p>Análise aprofundada e multidisciplinar de cada caso.</p>
+          </div>
+        </div>
+        <div class="ib-item reveal-up" style="--delay: 0.1s">
+          <div class="ib-icon">🛡️</div>
+          <div>
+            <h3>Sigilo Absoluto</h3>
+            <p>Conformidade rigorosa com a ética profissional e LGPD.</p>
+          </div>
+        </div>
+        <div class="ib-item reveal-up" style="--delay: 0.2s">
+          <div class="ib-icon">🤝</div>
+          <div>
+            <h3>Atendimento Personalizado</h3>
+            <p>Relação de confiança direta com os sócios gestores.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. ÁREAS DE ATUAÇÃO -->
+    <section class="section atuacao-section" id="atuacao">
+      <div class="container">
+        <div class="section-header text-center reveal-up">
+          <span class="eyebrow">SOLUÇÕES JURÍDICAS ESPECIALIZADAS</span>
+          <h2 class="section-title">Áreas de Atuação</h2>
+          <p class="section-desc">
+            Assessoramos pessoas físicas e jurídicas em litígios complexos e prevenção de riscos legais.
+          </p>
+        </div>
+
+        <div class="atuacao-grid">
+          <!-- Card 1 -->
+          <article class="atuacao-card tilt-card reveal-up">
+            <div class="tilt-glare"></div>
+            <div class="card-icon">🏛️</div>
+            <h3>Direito Civil</h3>
+            <p>Contratos, responsabilidade civil, indenizações, direito das obrigações e solução de litígios contratuais complexos.</p>
+            <a href="#contato" class="card-link">Saiba mais sobre a área <span>→</span></a>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="atuacao-card tilt-card reveal-up" style="--delay: 0.1s">
+            <div class="tilt-glare"></div>
+            <div class="card-icon">⚖️</div>
+            <h3>Direito Trabalhista</h3>
+            <p>Consultoria preventiva para empresas, defesa em reclamatórias trabalhistas e compliance nas relações de trabalho.</p>
+            <a href="#contato" class="card-link">Saiba mais sobre a área <span>→</span></a>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="atuacao-card tilt-card reveal-up" style="--delay: 0.2s">
+            <div class="tilt-glare"></div>
+            <div class="card-icon">🏢</div>
+            <h3>Direito Empresarial</h3>
+            <p>Societário, fusões e aquisições (M&A), recuperação judicial, falências e contratos comerciais estratégicos.</p>
+            <a href="#contato" class="card-link">Saiba mais sobre a área <span>→</span></a>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="atuacao-card tilt-card reveal-up">
+            <div class="tilt-glare"></div>
+            <div class="card-icon">👨‍👩‍👧‍👦</div>
+            <h3>Família e Sucessões</h3>
+            <p>Planejamento sucessório, holdings familiares, divórcios consensuais e litigiosos, inventários e partilhas.</p>
+            <a href="#contato" class="card-link">Saiba mais sobre a área <span>→</span></a>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="atuacao-card tilt-card reveal-up" style="--delay: 0.1s">
+            <div class="tilt-glare"></div>
+            <div class="card-icon">🏠</div>
+            <h3>Direito Imobiliário</h3>
+            <p>Regularização de imóveis urbanos e rurais, locações, incorporações imobiliárias e litígios possessórios.</p>
+            <a href="#contato" class="card-link">Saiba mais sobre a área <span>→</span></a>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="atuacao-card tilt-card reveal-up" style="--delay: 0.2s">
+            <div class="tilt-glare"></div>
+            <div class="card-icon">📋</div>
+            <h3>Direito Previdenciário</h3>
+            <p>Planejamento de aposentadorias, revisões de benefícios junto ao INSS e contencioso administrativo e judicial.</p>
+            <a href="#contato" class="card-link">Saiba mais sobre a área <span>→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SOBRE O ESCRITÓRIO -->
+    <section class="section about-section" id="escritorio">
+      <div class="container about-grid">
+        <div class="about-media reveal-left">
+          <div class="about-img-box">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=900&q=85" alt="Escritório de advocacia Monteiro e Associados ambiente moderno" loading="lazy">
+          </div>
+          <div class="about-float-box">
+            <strong>Tradição & Inovação</strong>
+            <span>Soluções jurídicas modernas com solidez clássica.</span>
+          </div>
+        </div>
+
+        <div class="about-content reveal-right">
+          <span class="eyebrow">HISTÓRIA E VALORES</span>
+          <h2 class="section-title">Uma trajetória construída sobre a base da ética e da confiança.</h2>
+          <p class="about-text">
+            Fundado pelo Dr. Carlos Monteiro, o escritório <strong>Monteiro & Associados</strong> consolidou-se ao longo de mais de duas décadas como referência em advocacia de alta complexidade. Nossa equipe é composta por profissionais altamente especializados, formados nas principais instituições do país.
+          </p>
+          <p class="about-text">
+            Acreditamos que a advocacia moderna exige não apenas domínio técnico da legislação, mas também visão estratégica de negócios e profunda empatia com os desafios enfrentados por nossos clientes.
+          </p>
+
+          <div class="about-pills">
+            <div class="pill">Missão: Defender direitos com lealdade e eficácia.</div>
+            <div class="pill">Visão: Ser referência nacional em soluções jurídicas.</div>
+            <div class="pill">Valores: Ética, transparência e excelência.</div>
+          </div>
+
+          <a href="#contato" class="btn btn-navy">Agende uma consulta</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. EQUIPE DE ADVOGADOS -->
+    <section class="section team-section" id="equipe">
+      <div class="container">
+        <div class="section-header text-center reveal-up">
+          <span class="eyebrow">CORPO SOCIETÁRIO E TÉCNICO</span>
+          <h2 class="section-title">Nossos Sócios</h2>
+          <p class="section-desc">
+            Profissionais dedicados à excelência acadêmica e prática jurídica de alto nível.
+          </p>
+        </div>
+
+        <div class="team-grid">
+          <!-- Advogado 1 -->
+          <div class="team-card reveal-up">
+            <div class="team-photo">
+              <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=85" alt="Dr. Carlos Monteiro" loading="lazy">
+              <div class="team-overlay">
+                <p>Especialista em Direito Civil e Contratos Complexos. Mestre pela USP e membro do Instituto dos Advogados.</p>
+                <span class="oab-tag">OAB/SP 142.890</span>
+              </div>
+            </div>
+            <div class="team-info">
+              <h3>Dr. Carlos Monteiro</h3>
+              <span>Sócio Fundador • Civil e Empresarial</span>
+            </div>
+          </div>
+
+          <!-- Advogada 2 -->
+          <div class="team-card reveal-up" style="--delay: 0.1s">
+            <div class="team-photo">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=85" alt="Dra. Mariana Ribeiro" loading="lazy">
+              <div class="team-overlay">
+                <p>Especialista em Direito Trabalhista Patronal e Compliance Corporativo. Pós-graduada em Relações do Trabalho.</p>
+                <span class="oab-tag">OAB/SP 210.432</span>
+              </div>
+            </div>
+            <div class="team-info">
+              <h3>Dra. Mariana Ribeiro</h3>
+              <span>Sócia Gestora • Trabalhista & Compliance</span>
+            </div>
+          </div>
+
+          <!-- Advogado 3 -->
+          <div class="team-card reveal-up" style="--delay: 0.2s">
+            <div class="team-photo">
+              <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=85" alt="Dr. Eduardo Siqueira" loading="lazy">
+              <div class="team-overlay">
+                <p>Especialista em Direito de Família, Sucessões e Planejamento Patrimonial e Sucessório internacional.</p>
+                <span class="oab-tag">OAB/SP 188.754</span>
+              </div>
+            </div>
+            <div class="team-info">
+              <h3>Dr. Eduardo Siqueira</h3>
+              <span>Sócio • Família e Sucessões</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CONTEÚDOS JURÍDICOS (ARTIGOS) -->
+    <section class="section articles-section" id="conteudos">
+      <div class="container">
+        <div class="section-header text-center reveal-up">
+          <span class="eyebrow">ATUALIDADES E PUBLICAÇÕES</span>
+          <h2 class="section-title">Conteúdos Jurídicos</h2>
+          <p class="section-desc">
+            Artigos e análises elaborados por nossa equipe sobre as principais inovações legislativas e jurisprudenciais.
+          </p>
+        </div>
+
+        <div class="articles-grid">
+          <article class="article-card reveal-up">
+            <div class="article-meta">
+              <span class="article-date">12 de Novembro, 2026</span>
+              <span class="article-cat">Direito Empresarial</span>
+            </div>
+            <h3>Os Impactos da Nova Legislação de Proteção de Dados nas Relações Comerciais</h3>
+            <p>Análise prática sobre as exigências de conformidade para empresas de médio e grande porte frente às fiscalizações recentes.</p>
+            <a href="#contato" class="card-link">Ler artigo completo <span>→</span></a>
+          </article>
+
+          <article class="article-card reveal-up" style="--delay: 0.1s">
+            <div class="article-meta">
+              <span class="article-date">28 de Outubro, 2026</span>
+              <span class="article-cat">Planejamento Sucessório</span>
+            </div>
+            <h3>Holding Familiar como Instrumento de Proteção Patrimonial e Sucessão</h3>
+            <p>Como a estruturação societária familiar pode otimizar a carga tributária e garantir uma transição segura de bens.</p>
+            <a href="#contato" class="card-link">Ler artigo completo <span>→</span></a>
+          </article>
+
+          <article class="article-card reveal-up" style="--delay: 0.2s">
+            <div class="article-meta">
+              <span class="article-date">15 de Outubro, 2026</span>
+              <span class="article-cat">Direito Trabalhista</span>
+            </div>
+            <h3>Diretrizes Atuais sobre o Modelo de Trabalho Híbrido na Jurisprudência</h3>
+            <p>Principais cuidados jurídicos que os empregadores devem observar na gestão de contratos com formato flexível.</p>
+            <a href="#contato" class="card-link">Ler artigo completo <span>→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. CTA SEÇÃO -->
+    <section class="cta-section">
+      <div class="container cta-box reveal-scale">
+        <div class="cta-content">
+          <span class="eyebrow eyebrow-gold">ATENDIMENTO ESPECIALIZADO</span>
+          <h2>Precisa de orientação jurídica?</h2>
+          <p>Nossa equipe está preparada para analisar seu caso com o rigor técnico e a confidencialidade que você merece.</p>
+        </div>
+        <a href="#contato" class="btn btn-gold btn-lg">Entrar em contato</a>
+      </div>
+    </section>
+
+    <!-- 9. CONTATO & LOCALIZAÇÃO -->
+    <section class="section contact-section" id="contato">
+      <div class="container contact-grid">
+        <div class="contact-info reveal-left">
+          <span class="eyebrow">CANAIS DE ATENDIMENTO</span>
+          <h2 class="section-title">Entre em contato conosco</h2>
+          <p class="contact-lead">
+            Visite nosso escritório na Avenida Paulista ou agende uma reunião presencial ou por videoconferência.
+          </p>
+
+          <div class="contact-details-box">
+            <div class="cd-item">
+              <strong>Endereço</strong>
+              <p>Av. Paulista, 1000 — Conjunto 82 — Bela Vista, São Paulo - SP</p>
+            </div>
+            <div class="cd-item">
+              <strong>Telefone & WhatsApp</strong>
+              <p>(11) 3284-9000 / (11) 98888-7777</p>
+            </div>
+            <div class="cd-item">
+              <strong>E-mail Institucional</strong>
+              <p>contato@monteiroassociados.adv.br</p>
+            </div>
+            <div class="cd-item">
+              <strong>Horário de Funcionamento</strong>
+              <p>Segunda a Sexta-feira: 09:00 às 18:00</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulário Funcional com Redirecionamento WhatsApp / E-mail -->
+        <div class="contact-form-wrapper reveal-right">
+          <form class="contact-form" id="contactForm" novalidate>
+            <h3>Formulário de Contato</h3>
+            <p class="form-sub">Preencha os campos abaixo para iniciar seu atendimento com nossa equipe.</p>
+
+            <div class="form-group">
+              <label for="clientName">Nome completo *</label>
+              <input type="text" id="clientName" name="clientName" placeholder="Ex: Roberto Sampaio" required>
+              <small class="error-msg" id="nameError"></small>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="clientPhone">Telefone / WhatsApp *</label>
+                <input type="tel" id="clientPhone" name="clientPhone" placeholder="(11) 99999-9999" required>
+                <small class="error-msg" id="phoneError"></small>
+              </div>
+              <div class="form-group">
+                <label for="clientEmail">E-mail corporativo ou pessoal *</label>
+                <input type="email" id="clientEmail" name="clientEmail" placeholder="nome@exemplo.com" required>
+                <small class="error-msg" id="emailError"></small>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="areaSelect">Área de interesse *</label>
+              <select id="areaSelect" name="areaSelect" required>
+                <option value="">Selecione...</option>
+                <option value="Direito Civil">Direito Civil</option>
+                <option value="Direito Trabalhista">Direito Trabalhista</option>
+                <option value="Direito Empresarial">Direito Empresarial</option>
+                <option value="Família e Sucessões">Família e Sucessões</option>
+                <option value="Direito Imobiliário">Direito Imobiliário</option>
+                <option value="Direito Previdenciário">Direito Previdenciário</option>
+                <option value="Outros Assuntos">Outros Assuntos</option>
+              </select>
+              <small class="error-msg" id="areaError"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="clientMessage">Mensagem / Resumo do caso *</label>
+              <textarea id="clientMessage" name="clientMessage" rows="4" placeholder="Descreva brevemente o assunto que gostaria de tratar..." required></textarea>
+              <small class="error-msg" id="msgError"></small>
+            </div>
+
+            <button type="submit" class="btn btn-gold btn-block">
+              <span>Enviar mensagem via WhatsApp</span>
+            </button>
+            <p class="form-feedback" id="formFeedback" role="status"></p>
+          </form>
+        </div>
+      </div>
+
+      <!-- Mapa de Localização (OpenStreetMap) -->
+      <div class="container map-container reveal-up">
+        <iframe 
+          title="Mapa de localização do escritório Monteiro & Associados"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-46.6550%2C-23.5650%2C-46.6450%2C-23.5590&layer=mapnik&marker=-23.5620%2C-46.6500" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <!-- 10. FOOTER INSTITUCIONAL -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#inicio" class="logo logo-footer">
+          <div class="logo-mark">M&A</div>
+          <div class="logo-text">
+            <span class="logo-title">MONTEIRO & ASSOCIADOS</span>
+            <span class="logo-subtitle">SOCIEDADE DE ADVOGADOS</span>
+          </div>
+        </a>
+        <p>Sociedade de advogados inscrita na OAB/SP sob o nº 12.450. Atuação jurídica pautada nos princípios éticos, morais e na excelência técnica.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#escritorio">O Escritório</a></li>
+          <li><a href="#atuacao">Áreas de Atuação</a></li>
+          <li><a href="#equipe">Corpo Societário</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Áreas Jurídicas</h4>
+        <ul>
+          <li><a href="#atuacao">Direito Civil</a></li>
+          <li><a href="#atuacao">Direito Trabalhista</a></li>
+          <li><a href="#atuacao">Direito Empresarial</a></li>
+          <li><a href="#atuacao">Família e Sucessões</a></li>
+          <li><a href="#atuacao">Direito Imobiliário</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contato Direto</h4>
+        <p>Av. Paulista, 1000 — Cj. 82<br>Bela Vista, São Paulo - SP<br>Tel: (11) 3284-9000<br>contato@monteiroassociados.adv.br</p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 Monteiro & Associados Sociedade de Advogados. Todos os direitos reservados.</p>
+      <a href="#inicio">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
